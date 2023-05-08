@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon detail</title>
+</head>
+<body>
+    <h1>complete</h1>
+
+    <!--
+        <div class="sidebar" style="position: fixed; 
+            display: flex; 
+            top: 10%;
+            left: -5rem; 
+            flex-direction: column; 
+            background-color: black; 
+            width: 33rem;
+            height: 80%;
+            border-radius: 2rem;">
+            <h1 style="text-align: center; color: white; font-weight: bold; margin-top: 3rem;">Pokemon</h1>  
+        </div>
+    -->
+</body>
+<script>
+    pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
+    const newsHtml = pokemons.map((pokemon) => `<p>${pokemon.number}</p>`)
+    overlay.innerHTML += `${pokemon.name}`
+    })
+</script>
+</html>
